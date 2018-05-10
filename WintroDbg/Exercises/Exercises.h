@@ -27,8 +27,8 @@ constexpr bool should_reset_screen<T, std::void_t<decltype(T::resetScreen)>> = T
 
 auto getExercises()
 {
-    return std::make_tuple( //GoExercise{}, SimpleBpExercise{}, SymbolBpExercise{},
-        //ReadMemoryExercise{}, WriteMemoryExercise{},
+    return std::make_tuple( GoExercise{}, SimpleBpExercise{}, SymbolBpExercise{},
+        ReadMemoryExercise{}, WriteMemoryExercise{},
         DisassemblyExercise{},
         FinishExercise{});
 }
@@ -58,7 +58,7 @@ void displayFailureMessage()
     static size_t currentIndex = 0;
     printf("%s\n", messages[currentIndex]);
 
-    if (currentIndex + 1 > std::size(messages)) {
+    if (currentIndex + 1 >= std::size(messages)) {
         currentIndex = 0;
     } else {
         currentIndex++;

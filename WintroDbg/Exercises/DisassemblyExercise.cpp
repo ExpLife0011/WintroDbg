@@ -27,14 +27,14 @@ Debugging is not worth anything if you can't view the code you're debugging.
 Read about the 'u' command.
 
 Disassemble the function at address: %x
-Tell me the the name of the 4th instruction.
+Tell me the the name of the 1st instruction.
 )",
            (uintptr_t)&toDis);
 }
 
 bool DisassemblyExercise::checkInput(const std::string& input)
 {
-    return input.find("xor") != std::string::npos;
+    return input.find("push") != std::string::npos;
 }
 
 std::string DisassemblyExercise::getInput()
