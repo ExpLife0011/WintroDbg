@@ -2,6 +2,7 @@
 
 #include "WintroDbg/Exercises/Exercises.h"
 #include "WintroDbg/Utils/DebuggingUtils.h"
+#include "WintroDbg/Utils/IOUtils.h"
 #include "WintroDbg/Utils/TupleUtils.h"
 
 using namespace wintro::exercises;
@@ -17,15 +18,22 @@ void runExercise(ExerciseType ex)
 template <typename ExerciseType>
 void runInputExercise(ExerciseType ex)
 {
-    decltype(ex.getInput()) input{};
-    do {
+    wintro::utils::flush();
+    wintro::utils::debugBreak();
+
+    auto input = ex.getInput();
+
+    while (!ex.checkInput(input)) {
+        displayFailureMessage();
+        wintro::utils::debugBreak();
+
         try {
-            wintro::utils::debugBreak();
+            wintro::utils::flush();
             input = ex.getInput();
         } catch (const std::exception& ex) {
             printf("%s\n", ex.what());
         }
-    } while (!ex.checkInput(input));
+    }
 }
 
 int main()

@@ -131,22 +131,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Exercises\DisassemblyExercise.cpp" />
     <ClCompile Include="Exercises\FinishExercise.cpp" />
     <ClCompile Include="Exercises\GoExercise.cpp" />
     <ClCompile Include="Exercises\ReadMemoryExercise.cpp" />
     <ClCompile Include="Exercises\SimpleBpExercise.cpp" />
     <ClCompile Include="Exercises\SymbolBpExercise.cpp" />
+    <ClCompile Include="Exercises\WriteMemoryExercise.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Utils\DebuggingUtils.cpp" />
     <ClCompile Include="Utils\IOUtils.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Exercises\DisassemblyExercise.h" />
     <ClInclude Include="Exercises\Exercises.h" />
     <ClInclude Include="Exercises\FinishExercise.h" />
     <ClInclude Include="Exercises\GoExercise.h" />
     <ClInclude Include="Exercises\ReadMemoryExercise.h" />
     <ClInclude Include="Exercises\SimpleBpExercise.h" />
     <ClInclude Include="Exercises\SymbolBpExercise.h" />
+    <ClInclude Include="Exercises\WriteMemoryExercise.h" />
     <ClInclude Include="Utils\DebuggingUtils.h" />
     <ClInclude Include="Utils\IOUtils.h" />
     <ClInclude Include="Utils\TupleUtils.h" />

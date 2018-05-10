@@ -6,6 +6,7 @@ namespace utils {
 
 uint32_t scanHexInt();
 uint64_t scanHexLongLong();
+void flush();
 
 } // namespace utils
 } // namespace wintro

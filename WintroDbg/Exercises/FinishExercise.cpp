@@ -7,7 +7,7 @@ namespace exercises {
 
 void FinishExercise::display()
 {
-    printf(R"(That's it. THis journey is over, and another shall soon begin.
+    printf(R"(That's it. This journey is over, and another shall soon begin.
 Truly, you know no fear, for you have mastered this course.
 Onwards, then, to exterminate the bugs that plauge our code!
 Onwards, to bigger things.

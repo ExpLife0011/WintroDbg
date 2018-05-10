@@ -1,5 +1,6 @@
 #pragma once
 
+#include <conio.h>
 #include <cstdio>
 #include <stdexcept>
 
@@ -42,6 +43,15 @@ uint64_t scanHexLongLong()
     }
 
     return hex;
+}
+
+void flush()
+{
+    int ch;
+    if (_kbhit()) {
+        while ((ch = getchar()) != EOF && ch != '\n')
+            ;
+    }
 }
 
 } // namespace utils

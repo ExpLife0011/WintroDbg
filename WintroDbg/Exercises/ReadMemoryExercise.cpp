@@ -18,7 +18,7 @@ void ReadMemoryExercise::display()
 First, reading memory.
 
 Here's an Address: %x
-Tell me the WORD that's stored ther.
+Tell me the WORD that's stored there.
 So you should get the WORD, resume execution, and type it at the comand line.
 That's the 'dw' command for you :)
 Of course, this is just one of the many commands for displaying memory contents.
