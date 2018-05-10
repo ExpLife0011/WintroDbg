@@ -1,0 +1,6 @@
+
+BasedOnStyle: Webkit
+FixNamespaceComments: true
+NamespaceIndentation: None
+PointerAlignment: Left
+AlignAfterOpenBracket: Align

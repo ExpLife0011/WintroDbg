@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WintroDbg", "WintroDbg\WintroDbg.vcxproj", "{D48274D4-79C0-4126-980F-076660D83831}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D48274D4-79C0-4126-980F-076660D83831}.Debug|x64.ActiveCfg = Debug|x64
+		{D48274D4-79C0-4126-980F-076660D83831}.Debug|x64.Build.0 = Debug|x64
+		{D48274D4-79C0-4126-980F-076660D83831}.Debug|x86.ActiveCfg = Debug|Win32
+		{D48274D4-79C0-4126-980F-076660D83831}.Debug|x86.Build.0 = Debug|Win32
+		{D48274D4-79C0-4126-980F-076660D83831}.Release|x64.ActiveCfg = Release|x64
+		{D48274D4-79C0-4126-980F-076660D83831}.Release|x64.Build.0 = Release|x64
+		{D48274D4-79C0-4126-980F-076660D83831}.Release|x86.ActiveCfg = Release|Win32
+		{D48274D4-79C0-4126-980F-076660D83831}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {23151CE4-28C6-4FE7-9C79-405B7F18FDCF}
+	EndGlobalSection
+EndGlobal
