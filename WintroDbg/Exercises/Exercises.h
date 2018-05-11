@@ -7,6 +7,7 @@
 #include "WintroDbg/Exercises/GoExercise.h"
 #include "WintroDbg/Exercises/ReadMemoryExercise.h"
 #include "WintroDbg/Exercises/SimpleBpExercise.h"
+#include "WintroDbg/Exercises/StackTraceExercise.h"
 #include "WintroDbg/Exercises/SymbolBpExercise.h"
 #include "WintroDbg/Exercises/WriteMemoryExercise.h"
 
@@ -27,10 +28,10 @@ constexpr bool should_reset_screen<T, std::void_t<decltype(T::resetScreen)>> = T
 
 auto getExercises()
 {
-    return std::make_tuple( GoExercise{}, SimpleBpExercise{}, SymbolBpExercise{},
-        ReadMemoryExercise{}, WriteMemoryExercise{},
-        DisassemblyExercise{},
-        FinishExercise{});
+    return std::make_tuple(GoExercise{}, SimpleBpExercise{}, SymbolBpExercise{},
+                           ReadMemoryExercise{}, WriteMemoryExercise{},
+                           DisassemblyExercise{}, StackTraceExercise{},
+                           FinishExercise{});
 }
 
 template <typename Exercise>

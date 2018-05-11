@@ -10,10 +10,10 @@ using namespace wintro::exercises;
 template <typename ExerciseType>
 void runExercise(ExerciseType ex)
 {
-	wintro::utils::debugBreak();
+    wintro::utils::debugBreak();
 
-	while (!ex.check()) {
-		displayFailureMessage();
+    while (!ex.check()) {
+        displayFailureMessage();
         wintro::utils::debugBreak();
     };
 }
@@ -23,12 +23,12 @@ void runInputExercise(ExerciseType ex)
 {
     wintro::utils::debugBreak();
 
-	decltype(ex.getInput()) input{};
-	try {
-		input = ex.getInput();
-	} catch (const std::exception& ex) {
-		printf("%s\n", ex.what());
-	}
+    decltype(ex.getInput()) input{};
+    try {
+        input = ex.getInput();
+    } catch (const std::exception& ex) {
+        printf("%s\n", ex.what());
+    }
     while (!ex.checkInput(input)) {
         displayFailureMessage();
         wintro::utils::debugBreak();

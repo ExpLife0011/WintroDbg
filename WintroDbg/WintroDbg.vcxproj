@@ -136,6 +136,7 @@
     <ClCompile Include="Exercises\GoExercise.cpp" />
     <ClCompile Include="Exercises\ReadMemoryExercise.cpp" />
     <ClCompile Include="Exercises\SimpleBpExercise.cpp" />
+    <ClCompile Include="Exercises\StackTraceExercise.cpp" />
     <ClCompile Include="Exercises\SymbolBpExercise.cpp" />
     <ClCompile Include="Exercises\WriteMemoryExercise.cpp" />
     <ClCompile Include="main.cpp" />
@@ -149,6 +150,7 @@
     <ClInclude Include="Exercises\GoExercise.h" />
     <ClInclude Include="Exercises\ReadMemoryExercise.h" />
     <ClInclude Include="Exercises\SimpleBpExercise.h" />
+    <ClInclude Include="Exercises\StackTraceExercise.h" />
     <ClInclude Include="Exercises\SymbolBpExercise.h" />
     <ClInclude Include="Exercises\WriteMemoryExercise.h" />
     <ClInclude Include="Utils\DebuggingUtils.h" />

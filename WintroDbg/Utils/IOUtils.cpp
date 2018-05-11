@@ -3,9 +3,8 @@
 #include <conio.h>
 #include <cstdio>
 #include <iostream>
-#include <string>
 #include <stdexcept>
-
+#include <string>
 
 #include "WintroDbg/Utils/IOUtils.h"
 
@@ -15,15 +14,15 @@ namespace utils {
 uint64_t scanHexLongLong()
 {
     printf("> ");
-	
-	std::string input;
-	std::cin >> input;
 
-	for (char c : input) {
-		if (!isxdigit(c)) {
-			throw std::domain_error("Please enter a hexadecimal number!");
-		}
-	}
+    std::string input;
+    std::cin >> input;
+
+    for (char c : input) {
+        if (!isxdigit(c)) {
+            throw std::domain_error("Please enter a hexadecimal number!");
+        }
+    }
 
     uint64_t hex = 0;
     if (sscanf(input.c_str(), "%llx", &hex) == 1) {
@@ -41,10 +40,11 @@ uint64_t scanHexLongLong()
 
 void flush()
 {
-	if (_kbhit()) {
-		int c;
-		while ((c = getchar()) != EOF && c != '\n') {}
-	}
+    if (_kbhit()) {
+        int c;
+        while ((c = getchar()) != EOF && c != '\n') {
+        }
+    }
 }
 
 } // namespace utils

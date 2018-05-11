@@ -5,12 +5,12 @@
 namespace wintro {
 namespace exercises {
 
-struct DisassemblyExercise {
+struct StackTraceExercise {
     void display();
-    bool checkInput(const std::string& input);
-    std::string getInput();
+    bool checkInput(uint64_t input);
+    uint64_t getInput();
 
-    static constexpr auto name = "Breaking Stuff Down";
+    static constexpr auto name = "Looking For Traces";
 };
 
 } // namespace exercises
